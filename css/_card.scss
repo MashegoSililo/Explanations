@@ -1,0 +1,82 @@
+$cardWidth: 255px;
+$cardHeight: 290px;
+
+.flip-card {
+  position: relative;
+  background-color: transparent;
+  width: $cardWidth;
+  height: $cardHeight;
+  border: 1px solid whitesmoke;
+  perspective: 1000px;
+  
+ 
+  /* Positions the front and back side of the card */
+  .flip-card-inner {
+    position: relative;
+    width: $cardWidth;
+    height: $cardHeight;
+    text-align: center;
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    z-index: 1;
+  }
+  //Positions the front and back side of the cards
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: $cardWidth;
+    height: $cardHeight;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 1;
+  }
+  .text {
+    font-family: Century;
+    font-size: 2.8vh;
+    text-align: left;
+    padding: 5%;
+    padding-top: 10%;
+  }
+  // Card design
+  .card-front {
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+    width: $cardWidth;
+    height: $cardHeight;
+  }
+
+  .gg {
+    position: fixed;
+    height: 100%;
+    font-family: sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    padding: 0;
+    line-height: 160%;
+    background-color: black;
+  }
+
+  .g {
+    position: absolute;
+  }
+  .g1 {
+    top: -45px;
+    left: 5px;
+    color: white;
+  }
+
+  .g2 {
+    left: 67px;
+    color: white;
+  }
+
+  /* Card Back */
+  .flip-card-back {
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+    border: 0.5px solid black;
+  }
+}
