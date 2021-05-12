@@ -8,6 +8,9 @@ hamburger.addEventListener("click", () => {
 });
 
 // Tabs
+defaultOpen = document.getElementById("defaultTab");
+defaultOpen.click();
+
 function openTab(evt, tabName) {
   var i, suite, tabLink;
   
@@ -18,16 +21,13 @@ function openTab(evt, tabName) {
 
   tabLink = document.getElementsByClassName("tabLink");
   for (i=0; i <tabLink.length; i++) {
-      tabLink[i].className = tabLink[i].className.replace("active", "");
-   
+      tabLink[i].className = tabLink[i].className.replace(" active", " ");
   }
- 
 
   document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += "active";
+  evt.currentTarget.className += " active";
+
 }
-
-
 
 // Page Animations
 const sequence = gsap.timeline({defaults: {ease: "power1.out"} });

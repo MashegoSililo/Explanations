@@ -1,5 +1,6 @@
-$cardWidth: 255px;
-$cardHeight: 290px;
+$cardWidth: 275px;
+$cardHeight: 225px;
+$linkColor: #b63215;
 
 .flip-card {
   position: relative;
@@ -7,15 +8,15 @@ $cardHeight: 290px;
   width: $cardWidth;
   height: $cardHeight;
   border: 1px solid whitesmoke;
+  border-radius: 25px;
   perspective: 1000px;
-  
- 
+  padding-bottom: 5px;
+
   /* Positions the front and back side of the card */
   .flip-card-inner {
     position: relative;
     width: $cardWidth;
     height: $cardHeight;
-    text-align: center;
     transition: transform 0.3s;
     transform-style: preserve-3d;
     cursor: pointer;
@@ -32,19 +33,26 @@ $cardHeight: 290px;
     z-index: 1;
   }
   .text {
-    font-family: Century;
-    font-size: 2.8vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1em;
+
     text-align: left;
-    padding: 5%;
-    padding-top: 10%;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translateY(-40%) translateX(-40%) ;
+
+
   }
   // Card design
   .card-front {
-    background-color: black;
+    background-color: $linkColor;
     overflow: hidden;
     position: relative;
     width: $cardWidth;
     height: $cardHeight;
+    border-radius: 25px;
   }
 
   .gg {
@@ -55,7 +63,7 @@ $cardHeight: 290px;
     font-weight: bold;
     padding: 0;
     line-height: 160%;
-    background-color: black;
+    background-color: $linkColor;
   }
 
   .g {
@@ -74,9 +82,12 @@ $cardHeight: 290px;
 
   /* Card Back */
   .flip-card-back {
-    background-color: white;
+    background: white;
     color: black;
     transform: rotateY(180deg);
-    border: 0.5px solid black;
+    border: 0.5px solid rgb(95, 78, 52);
+    border-radius: 25px;
+    min-height: $cardHeight;
+    
   }
 }

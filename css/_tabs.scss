@@ -1,4 +1,5 @@
 $btnWidth: 225px;
+$linkColor: #b63215;
 
 .tab {
   overflow: hidden;
@@ -9,17 +10,20 @@ $btnWidth: 225px;
   width: $btnWidth;
   padding: 1%;
   margin: 1%;
-  background: inherit;
   float: left;
   border: 0.5px solid black;
   cursor: pointer;
-  transition: 0.3s;
+  // transition: 0.3s;
   font-family: Century;
   font-size: 1rem;
-  &:active {
-    background: #b63215;
-  }
+  background: inherit;
   &:hover {
-    background: #b63215;
+    background: $linkColor;
+  }
+  &:active {
+    background: $linkColor;
   }
 }
+
+
+

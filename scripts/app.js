@@ -1,4 +1,3 @@
-
 // Animation for responsive nav bar
 const hamburger = document.querySelector(".hamburger");
 const links = document.querySelector(".links");
@@ -11,7 +10,7 @@ hamburger.addEventListener("click", () => {
 // Instructions Modal
 var modal = document.getElementById("openInstructions");
 
-var button = document.getElementById("button");
+const button = document.getElementById("button");
 
 var closeModal = document.getElementsByClassName("close")[0];
 
