@@ -1,13 +1,13 @@
 $cardWidth: 275px;
 $cardHeight: 225px;
-$linkColor: #b63215;
+$linkColor: #972D07;
 
 .flip-card {
   position: relative;
   background-color: transparent;
   width: $cardWidth;
   height: $cardHeight;
-  border: 1px solid whitesmoke;
+  border: 0.5px solid white;
   border-radius: 25px;
   perspective: 1000px;
   padding-bottom: 5px;
@@ -36,15 +36,13 @@ $linkColor: #b63215;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 1em;
-
     text-align: left;
     position: absolute;
     top: 40%;
     left: 40%;
     transform: translateY(-40%) translateX(-40%) ;
-
-
   }
+  
   // Card design
   .card-front {
     background-color: $linkColor;

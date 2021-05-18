@@ -1,25 +1,26 @@
 .navigation {
+  position: fixed;
   display: flex;
   height: 10%;
   width: 100%;
+  position: fixed;
+  justify-content: baseline;
+  z-index: 3;
+  background: white;
   .name {
-    position: relative;
     padding-left: 6%;
-    padding-top: 2px;
-    padding-bottom: 0px;
     height: 100%;
     width: 50%;
-    font-size: 5vh;
+    font-size: 4vh;
   }
   .links {
     display: flex;
     margin-left: auto;
-    margin-top: 3%;
-    height: 100%;
     width: 50%;
     justify-content: space-around;
     align-items: center;
     list-style: none;
+    margin-top: 55px;
   }
   .link-style {
     font-weight: bold;
@@ -30,13 +31,30 @@
       color: #b63215;
     }
   }
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 765px){
+    .navigation {
+      display: flex;
+      justify-content: baseline;
+    }
+    .name {
+      padding-left: 6%;
+      padding-bottom: 1%;
+      height: 10%;
+      width: 100%;
+      font-size: 4vh;
+      position: fixed;
+      top: 0%;
+      background: white;
+      z-index: 2;
+    }
+
     .hamburger {
-      position: absolute;
+      position: fixed;
       cursor: pointer;
       right: 5%;
-      top: 25%;
+      top: 5%;
       z-index: 3;
+
     }
     .links {
       position: fixed;

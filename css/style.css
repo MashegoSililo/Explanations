@@ -1,19 +1,23 @@
 .navigation {
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 10%;
   width: 100%;
+  position: fixed;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  z-index: 3;
+  background: white;
 }
 
 .navigation .name {
-  position: relative;
   padding-left: 6%;
-  padding-top: 2px;
-  padding-bottom: 0px;
   height: 100%;
   width: 50%;
-  font-size: 5vh;
+  font-size: 4vh;
 }
 
 .navigation .links {
@@ -21,8 +25,6 @@
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
-  margin-top: 3%;
-  height: 100%;
   width: 50%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -30,6 +32,7 @@
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
+  margin-top: 55px;
 }
 
 .navigation .link-style {
@@ -43,12 +46,31 @@
   color: #b63215;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 765px) {
+  .navigation .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+  }
+  .navigation .name {
+    padding-left: 6%;
+    padding-bottom: 1%;
+    height: 10%;
+    width: 100%;
+    font-size: 4vh;
+    position: fixed;
+    top: 0%;
+    background: white;
+    z-index: 2;
+  }
   .navigation .hamburger {
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     right: 5%;
-    top: 25%;
+    top: 5%;
     z-index: 3;
   }
   .navigation .links {
@@ -79,13 +101,81 @@
   }
 }
 
+/* Button that opens Modal */
+/* Modal */
+.open-instructions {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  z-index: 3;
+  width: 50%;
+  height: 75%;
+  overflow: auto;
+  background: white;
+  border: 0.5px solid black;
+}
+
+.content {
+  margin: 5% auto;
+  width: 85%;
+  font-size: 20px;
+}
+
+.close {
+  position: relative;
+  color: black;
+  font-size: 4vh;
+  width: 30px;
+  min-height: 30px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+.instructions {
+  display: block;
+  text-align: left;
+}
+
+.bulletpoints {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+@media screen and (max-width: 765px) {
+  .open-instructions {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 10%;
+    z-index: 3;
+    width: 80%;
+    height: 75%;
+    overflow: auto;
+    background: white;
+    border: 0.5px solid black;
+  }
+}
+
 .tab {
+  position: fixed;
+  top: 10%;
+  width: 100%;
   overflow: hidden;
-  margin-left: 5%;
+  margin-left: 4%;
+  z-index: 2;
+  background: white;
 }
 
 .tab button {
-  width: 225px;
+  width: 205px;
   padding: 1%;
   margin: 1%;
   float: left;
@@ -93,15 +183,15 @@
   cursor: pointer;
   font-family: Century;
   font-size: 1rem;
-  background: inherit;
+  background: white;
 }
 
 .tab button:hover {
-  background: #b63215;
+  background: #972D07;
 }
 
 .tab button:active {
-  background: #b63215;
+  background: #972D07;
 }
 
 .flip-card {
@@ -109,7 +199,7 @@
   background-color: transparent;
   width: 275px;
   height: 225px;
-  border: 1px solid whitesmoke;
+  border: 0.5px solid white;
   border-radius: 25px;
   -webkit-perspective: 1000px;
           perspective: 1000px;
@@ -155,7 +245,7 @@
 }
 
 .flip-card .card-front {
-  background-color: #b63215;
+  background-color: #972D07;
   overflow: hidden;
   position: relative;
   width: 275px;
@@ -171,7 +261,7 @@
   font-weight: bold;
   padding: 0;
   line-height: 160%;
-  background-color: #b63215;
+  background-color: #972D07;
 }
 
 .flip-card .g {
@@ -203,14 +293,14 @@
 .row-2,
 .row-3,
 .row-4 {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 3px;
 }
 
 .verticals {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
 footer {
@@ -242,8 +332,151 @@ footer .link-style-footer:hover {
   color: #b63215;
 }
 
+@media screen and (max-width: 765px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background: black;
+    margin: 5px;
+  }
+  .navigation {
+    position: relative;
+  }
+  .tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    top: 12%;
+    width: 100%;
+    overflow: auto;
+    margin-left: 1%;
+    z-index: 2;
+    background: white;
+  }
+  .row-1,
+  .row-2,
+  .row-3,
+  .row-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 1px;
+  }
+  .verticals {
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .flip-card {
+    position: relative;
+    background-color: transparent;
+    width: 160px;
+    height: 185px;
+    border: 1px solid whitesmoke;
+    border-radius: 25px;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+    padding-bottom: 3px;
+    /* Positions the front and back side of the card */
+    /* Card Back */
+  }
+  .flip-card .flip-card-inner {
+    position: relative;
+    width: 160px;
+    height: 185px;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .flip-card .flip-card-front,
+  .flip-card .flip-card-back {
+    position: absolute;
+    width: 160px;
+    height: 185px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 1;
+  }
+  .flip-card .text {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-align: left;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    -webkit-transform: translateY(-40%) translateX(-40%);
+            transform: translateY(-40%) translateX(-40%);
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+  }
+  .flip-card .card-front {
+    background-color: #972D07;
+    overflow: hidden;
+    position: relative;
+    width: 160px;
+    height: 185px;
+    border-radius: 25px;
+  }
+  .flip-card .gg {
+    position: fixed;
+    height: 100%;
+    font-family: sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    padding: 0;
+    line-height: 160%;
+    background-color: #972D07;
+  }
+  .flip-card .g {
+    position: absolute;
+  }
+  .flip-card .g1 {
+    top: -45px;
+    left: 5px;
+    color: white;
+  }
+  .flip-card .g2 {
+    left: 67px;
+    color: white;
+  }
+  .flip-card .flip-card-back {
+    background: white;
+    color: black;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    border: 0.5px solid #5f4e34;
+    border-radius: 25px;
+    min-height: 185px;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.landing {
+  padding-top: 5%;
+}
+
 .suite {
   margin-left: 5%;
+  margin-top: 100px;
+  position: absolute;
 }
 
 /* Image */
@@ -264,42 +497,6 @@ footer .link-style-footer:hover {
   font-size: 4vh;
 }
 
-/* Modal */
-.open-instructions {
-  display: none;
-  position: fixed;
-  top: 20%;
-  left: 10%;
-  z-index: 3;
-  width: 50%;
-  height: 75%;
-  overflow: auto;
-  background: white;
-  border: 0.5px solid black;
-}
-
-.content {
-  margin: 5% auto;
-  width: 80%;
-  font-size: 20px;
-}
-
-.close {
-  position: relative;
-  color: black;
-  float: right;
-  font-size: 4vh;
-  width: 30px;
-  min-height: 30px;
-  font-weight: bold;
-}
-
-.close:hover, .close:focus {
-  text-decoration: none;
-  cursor: pointer;
-  color: black;
-}
-
 .start-deck, .subheading-2 {
   height: 70px;
   width: 250px;
@@ -316,20 +513,7 @@ footer .link-style-footer:hover {
 }
 
 .start-deck:hover, .subheading-2:hover {
-  background: #b63215;
-}
-
-/* Button that opens Modal */
-.instructions {
-  display: block;
-  text-align: left;
-}
-
-.bulletpoints {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
+  background: #FC7750;
 }
 
 .main {
@@ -343,24 +527,5 @@ footer .link-style-footer:hover {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-}
-
-@media screen and (max-width: 768px) {
-  .line {
-    width: 30px;
-    height: 3px;
-    background: black;
-    margin: 5px;
-  }
-  .navigation {
-    position: relative;
-  }
-  .row-1,
-  .row-2,
-  .row-3,
-  .row-4 {
-    -ms-flex-line-pack: center;
-        align-content: center;
-  }
 }
 /*# sourceMappingURL=style.css.map */

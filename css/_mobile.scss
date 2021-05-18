@@ -1,1 +1,152 @@
+$cardWidth: 160px;
+$cardHeight: 185px;
+$mobileBtnWidth: 150px;
 
+@media screen and (max-width: 765px) {
+  // Index
+  .line {
+    width: 30px;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    margin: 5px;
+  }
+
+  .navigation {
+    position: relative;
+  }
+  // Tabs
+  .tab {
+    display: flex;
+    position: fixed;
+    top: 12%;
+    width: 100%;
+    overflow:auto;
+    margin-left: 1%;
+    z-index: 2;
+    background: white;
+  }
+  .tab button {
+    width: $mobileBtnWidth;
+    padding: 1%;
+    margin: 1%;
+    float: left;
+    border: 0.5px solid black;
+    cursor: pointer;
+    // transition: 0.3s;
+    font-family: Century;
+    font-size: 1rem;
+    background: white;
+    &:hover {
+      background: $linkColor;
+    }
+    &:active {
+      background: $linkColor;
+    }
+  }
+  
+
+  // Deck
+  .row-1,
+  .row-2,
+  .row-3,
+  .row-4 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1px;
+    
+  }
+  .verticals {
+    display: block;
+    
+    align-items: center;
+    justify-content: center;
+  }
+  // Card Dimension & Design
+  .flip-card {
+    position: relative;
+    background-color: transparent;
+    width: $cardWidth;
+    height: $cardHeight;
+    border: 1px solid whitesmoke;
+    border-radius: 25px;
+    perspective: 1000px;
+    padding-bottom: 3px;
+
+    /* Positions the front and back side of the card */
+    .flip-card-inner {
+      position: relative;
+      width: $cardWidth;
+      height: $cardHeight;
+      transition: transform 0.3s;
+      transform-style: preserve-3d;
+      cursor: pointer;
+      z-index: 1;
+    }
+    //Positions the front and back side of the cards
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: $cardWidth;
+      height: $cardHeight;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      z-index: 1;
+    }
+    .text {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-weight: bold;
+      font-size: 0.8em;
+      text-align: left;
+      position: absolute;
+      top: 40%;
+      left: 40%;
+      transform: translateY(-40%) translateX(-40%);
+      justify-content: baseline;
+    }
+
+    // Card design
+    .card-front {
+      background-color: $linkColor;
+      overflow: hidden;
+      position: relative;
+      width: $cardWidth;
+      height: $cardHeight;
+      border-radius: 25px;
+    }
+
+    .gg {
+      position: fixed;
+      height: 100%;
+      font-family: sans-serif;
+      font-size: 100px;
+      font-weight: bold;
+      padding: 0;
+      line-height: 160%;
+      background-color: $linkColor;
+    }
+
+    .g {
+      position: absolute;
+    }
+    .g1 {
+      top: -45px;
+      left: 5px;
+      color: white;
+    }
+
+    .g2 {
+      left: 67px;
+      color: white;
+    }
+
+    /* Card Back */
+    .flip-card-back {
+      background: white;
+      color: black;
+      transform: rotateY(180deg);
+      border: 0.5px solid rgb(95, 78, 52);
+      border-radius: 25px;
+      min-height: $cardHeight;
+    }
+  }
+}

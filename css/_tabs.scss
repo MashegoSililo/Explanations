@@ -1,9 +1,14 @@
-$btnWidth: 225px;
-$linkColor: #b63215;
+$btnWidth: 205px;
+$linkColor: #972D07;
 
 .tab {
+  position: fixed;
+  top: 10%;
+  width: 100%;
   overflow: hidden;
-  margin-left: 5%;
+  margin-left: 4%;
+  z-index: 2;
+  background: white;
 }
 
 .tab button {
@@ -16,7 +21,7 @@ $linkColor: #b63215;
   // transition: 0.3s;
   font-family: Century;
   font-size: 1rem;
-  background: inherit;
+  background: white;
   &:hover {
     background: $linkColor;
   }

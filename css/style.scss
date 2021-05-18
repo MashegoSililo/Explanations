@@ -1,4 +1,5 @@
 @import "./header";
+@import "./modal";
 @import "./tabs";
 @import "./card";
 @import "./format";
@@ -7,9 +8,21 @@
 
 $btnHeight: 70px;
 $btnWidth: 250px;
+$blue: #196564;
+$btnColor: #FC7750;
+
+body {
+  padding: 0;
+  margin: 0;
+}
+.landing {
+  padding-top: 5%;
+}
 
 .suite {
     margin-left: 5%;
+    margin-top: 100px;
+    position: absolute;
 }
 
 /* Image */
@@ -30,40 +43,6 @@ $btnWidth: 250px;
   font-size: 4vh;
 }
 
-/* Modal */
-.open-instructions {
-  display: none;
-  position: fixed;
-  top: 20%;
-  left: 10%;
-  z-index: 3;
-  width: 50%;
-  height: 75%;
-  overflow: auto;
-  background: white;
-  border: 0.5px solid black
-}
-
-.content {
-  margin: 5% auto;
-  width: 80%;
-  font-size: 20px;
-}
-
-.close {
-  position: relative;
-  color: black;
-  float: right;
-  font-size: 4vh;
-  width: 30px;
-  min-height: 30px;
-  font-weight: bold;
-  &:hover, &:focus{
-    text-decoration: none;
-    cursor: pointer;
-    color: black;
-  }
-}
 
 .start-deck{
   height: $btnHeight;
@@ -77,25 +56,10 @@ $btnWidth: 250px;
   text-decoration: none;
   color: black;
   &:hover {
-    background: $linkColor;
+    background: $btnColor;
   }
 }
-/* Button that opens Modal */
-.subheading-2 {
-  @extend .start-deck
-}
 
-.instructions {
-  display: block;
-  text-align: left;
-}
-
-.bulletpoints {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-}
 
 .main {
   width: 80%;
@@ -105,26 +69,3 @@ $btnWidth: 250px;
   display: flex;
   justify-content: space-around;
 }
-
-
-// Media Queries: Tablet portrait 
-@media screen and (max-width: 768px) {
-    // /* Responsive Stying for Header */
-    .line {
-      width: 30px;
-      height: 3px;
-      background: rgb(0, 0, 0);
-      margin: 5px;
-    }
-
-    .navigation {
-      position: relative;
-    }
-  
-    .row-1,
-    .row-2,
-    .row-3, 
-    .row-4 {
-      align-content: center;
-    }
-  }

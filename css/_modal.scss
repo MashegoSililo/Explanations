@@ -1,0 +1,66 @@
+/* Button that opens Modal */
+.subheading-2 {
+  @extend .start-deck;
+}
+/* Modal */
+.open-instructions {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  z-index: 3;
+  width: 50%;
+  height: 75%;
+  overflow: auto;
+  background: white;
+  border: 0.5px solid black;
+}
+
+.content {
+  margin: 5% auto;
+  width: 85%;
+  font-size: 20px;
+}
+
+.close {
+  position: relative;
+  color: black;
+  font-size: 4vh;
+  width: 30px;
+  min-height: 30px;
+  font-weight: bold;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+  }
+}
+
+.instructions {
+  display: block;
+  text-align: left;
+}
+
+.bulletpoints {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+@media screen and (max-width: 765px){
+    .open-instructions {
+        display: none;
+        position: fixed;
+        top: 20%;
+        left: 10%;
+        z-index: 3;
+        width: 80%;
+        height: 75%;
+        overflow: auto;
+        background: white;
+        border: 0.5px solid black;
+      }
+
+}
