@@ -296,6 +296,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 3px;
 }
 
@@ -353,6 +355,23 @@ footer .link-style-footer:hover {
     margin-left: 1%;
     z-index: 2;
     background: white;
+  }
+  .tab button {
+    width: 150px;
+    padding: 1%;
+    margin: 1%;
+    float: left;
+    border: 0.5px solid black;
+    cursor: pointer;
+    font-family: Century;
+    font-size: 1rem;
+    background: white;
+  }
+  .tab button:hover {
+    background: #972D07;
+  }
+  .tab button:active {
+    background: #972D07;
   }
   .row-1,
   .row-2,
@@ -479,6 +498,20 @@ body {
   position: absolute;
 }
 
+.suite-label {
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 5%;
+  margin: 10%;
+  width: 190%;
+  height: 100%;
+  text-align: center;
+}
+
+.nav-progress {
+  background: #d8d8aa;
+}
+
 /* Image */
 .img {
   display: block;
@@ -513,7 +546,7 @@ body {
 }
 
 .start-deck:hover, .subheading-2:hover {
-  background: #FC7750;
+  background: #fc7750;
 }
 
 .main {
