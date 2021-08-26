@@ -8,6 +8,12 @@
 }
 
 .verticals {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
 }
 
+.suite {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}

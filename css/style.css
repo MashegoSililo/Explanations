@@ -10,11 +10,13 @@
       -ms-flex-pack: baseline;
           justify-content: baseline;
   z-index: 3;
+  padding-bottom: 2%;
   background: white;
 }
 
 .navigation .name {
   padding-left: 6%;
+  padding-bottom: 5%;
   height: 100%;
   width: 50%;
   font-size: 4vh;
@@ -57,7 +59,7 @@
   }
   .navigation .name {
     padding-left: 6%;
-    padding-bottom: 1%;
+    padding-bottom: 5%;
     height: 10%;
     width: 100%;
     font-size: 4vh;
@@ -164,53 +166,24 @@
   }
 }
 
-.tab {
-  position: fixed;
-  top: 10%;
-  width: 100%;
-  overflow: hidden;
-  margin-left: 4%;
-  z-index: 2;
-  background: white;
-}
-
-.tab button {
-  width: 205px;
-  padding: 1%;
-  margin: 1%;
-  float: left;
-  border: 0.5px solid black;
-  cursor: pointer;
-  font-family: Century;
-  font-size: 1rem;
-  background: white;
-}
-
-.tab button:hover {
-  background: #972D07;
-}
-
-.tab button:active {
-  background: #972D07;
-}
-
 .flip-card {
   position: relative;
   background-color: transparent;
-  width: 275px;
+  width: 290px;
   height: 225px;
   border: 0.5px solid white;
   border-radius: 25px;
   -webkit-perspective: 1000px;
           perspective: 1000px;
   padding-bottom: 5px;
+  margin: 0.5px;
   /* Positions the front and back side of the card */
   /* Card Back */
 }
 
 .flip-card .flip-card-inner {
   position: relative;
-  width: 275px;
+  width: 290px;
   height: 225px;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
@@ -220,20 +193,22 @@
           transform-style: preserve-3d;
   cursor: pointer;
   z-index: 1;
+  margin: 0.5px;
 }
 
 .flip-card .flip-card-front,
 .flip-card .flip-card-back {
   position: absolute;
-  width: 275px;
+  width: 290px;
   height: 225px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   z-index: 1;
+  margin: 0.5px;
 }
 
 .flip-card .text {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
   font-size: 1em;
   text-align: left;
@@ -244,13 +219,28 @@
           transform: translateY(-40%) translateX(-40%);
 }
 
+.flip-card .see-info {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  background: #973b3b;
+  color: white;
+  padding: 1%;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+
 .flip-card .card-front {
-  background-color: #972D07;
+  background-color: #972d07;
   overflow: hidden;
   position: relative;
-  width: 275px;
+  width: 290px;
   height: 225px;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
 .flip-card .gg {
@@ -261,7 +251,7 @@
   font-weight: bold;
   padding: 0;
   line-height: 160%;
-  background-color: #972D07;
+  background-color: #972d07;
 }
 
 .flip-card .g {
@@ -285,7 +275,7 @@
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
   border: 0.5px solid #5f4e34;
-  border-radius: 25px;
+  border-radius: 15px;
   min-height: 225px;
 }
 
@@ -302,7 +292,17 @@
 }
 
 .verticals {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.suite {
+  position: absolute;
+  top: 15%;
+  left: 5%;
 }
 
 footer {
@@ -344,12 +344,20 @@ footer .link-style-footer:hover {
   .navigation {
     position: relative;
   }
+  .nav-suite {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    margin-left: 30%;
+    display: block;
+    width: 90%;
+  }
   .tab {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     position: fixed;
-    top: 12%;
+    top: 5%;
     width: 100%;
     overflow: auto;
     margin-left: 1%;
@@ -368,10 +376,10 @@ footer .link-style-footer:hover {
     background: white;
   }
   .tab button:hover {
-    background: #972D07;
+    background: #972d07;
   }
   .tab button:active {
-    background: #972D07;
+    background: #972d07;
   }
   .row-1,
   .row-2,
@@ -385,7 +393,11 @@ footer .link-style-footer:hover {
     padding: 1px;
   }
   .verticals {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -443,7 +455,7 @@ footer .link-style-footer:hover {
             justify-content: baseline;
   }
   .flip-card .card-front {
-    background-color: #972D07;
+    background-color: #972d07;
     overflow: hidden;
     position: relative;
     width: 160px;
@@ -458,7 +470,7 @@ footer .link-style-footer:hover {
     font-weight: bold;
     padding: 0;
     line-height: 160%;
-    background-color: #972D07;
+    background-color: #972d07;
   }
   .flip-card .g {
     position: absolute;
@@ -492,24 +504,62 @@ body {
   padding-top: 5%;
 }
 
-.suite {
-  margin-left: 5%;
-  margin-top: 100px;
+.nav-suite {
   position: absolute;
+  top: 18%;
+  margin-left: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90%;
 }
 
 .suite-label {
-  border: 1px solid black;
-  border-radius: 50%;
-  padding: 5%;
-  margin: 10%;
-  width: 190%;
-  height: 100%;
   text-align: center;
+  min-width: 50vh;
+  width: 50vh;
+  margin: 1%;
+  padding: 1%;
+  border: 0.5px solid black;
+  height: 50vh;
 }
 
-.nav-progress {
-  background: #d8d8aa;
+.suite-label .deck-link {
+  color: black;
+  text-decoration: none;
+}
+
+.suite-label .deck-link:link {
+  color: black;
+}
+
+.suite-label .deck-link:visited {
+  text-decoration: underline;
+}
+
+.description {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.first, .second, .third {
+  background: #b87da9;
+  padding-left: 45%;
+  padding-right: 45%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.second {
+  background: #d4dd84;
+}
+
+.third {
+  background: #639263;
 }
 
 /* Image */

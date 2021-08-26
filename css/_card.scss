@@ -1,6 +1,6 @@
-$cardWidth: 275px;
+$cardWidth: 290px;
 $cardHeight: 225px;
-$linkColor: #972D07;
+$linkColor: #972d07;
 
 .flip-card {
   position: relative;
@@ -11,6 +11,7 @@ $linkColor: #972D07;
   border-radius: 25px;
   perspective: 1000px;
   padding-bottom: 5px;
+  margin: 0.5px;
 
   /* Positions the front and back side of the card */
   .flip-card-inner {
@@ -21,6 +22,7 @@ $linkColor: #972D07;
     transform-style: preserve-3d;
     cursor: pointer;
     z-index: 1;
+    margin: 0.5px;
   }
   //Positions the front and back side of the cards
   .flip-card-front,
@@ -31,18 +33,34 @@ $linkColor: #972D07;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     z-index: 1;
+    margin: 0.5px;
   }
   .text {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     font-weight: bold;
     font-size: 1em;
     text-align: left;
     position: absolute;
     top: 40%;
     left: 40%;
-    transform: translateY(-40%) translateX(-40%) ;
+    transform: translateY(-40%) translateX(-40%);
   }
-  
+
+  .see-info {
+    position: absolute;
+    bottom: 5%;
+    right:5%;
+    transition: all 300ms ease-in-out;
+    background: rgb(151, 59, 59);
+    color:white;
+    padding:1%;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+
+  }
+
   // Card design
   .card-front {
     background-color: $linkColor;
@@ -50,7 +68,7 @@ $linkColor: #972D07;
     position: relative;
     width: $cardWidth;
     height: $cardHeight;
-    border-radius: 25px;
+    border-radius: 15px;
   }
 
   .gg {
@@ -84,8 +102,7 @@ $linkColor: #972D07;
     color: black;
     transform: rotateY(180deg);
     border: 0.5px solid rgb(95, 78, 52);
-    border-radius: 25px;
+    border-radius: 15px;
     min-height: $cardHeight;
-    
   }
 }

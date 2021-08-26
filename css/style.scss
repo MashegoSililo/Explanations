@@ -1,6 +1,5 @@
 @import "./header";
 @import "./modal";
-@import "./tabs";
 @import "./card";
 @import "./format";
 @import "./footer";
@@ -15,29 +14,64 @@ body {
   padding: 0;
   margin: 0;
 }
+
 .landing {
   padding-top: 5%;
 }
 
-
-.suite {
-  margin-left: 5%;
-  margin-top: 100px;
+.nav-suite {
   position: absolute;
+  top: 18%;
+  margin-left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
 }
 
 .suite-label {
-  border: 1px solid black;
-  border-radius: 50%;
-  padding: 5%;
-  margin: 10%;
-  width: 190%;
-  height: 100%;
   text-align: center;
+  min-width: 50vh;
+  width: 50vh;
+  margin: 1%;
+  padding: 1%;
+  border: 0.5px solid black;
+  height: 50vh;
+
+  .deck-link {
+    color: black;
+    text-decoration: none;
+
+    &:link {
+      color: black;
+    }
+    &:visited {
+      text-decoration: underline;
+    }
+  }
 }
 
-.nav-progress {
-  background: rgb(216, 216, 170);
+.description {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.first {
+  background: rgb(184, 125, 169);
+  padding-left: 45%;
+  padding-right: 45%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.second {
+  @extend .first;
+  background: rgb(212, 221, 132);
+}
+
+.third {
+  @extend .first;
+  background: rgb(99, 146, 99);
 }
 
 /* Image */
