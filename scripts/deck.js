@@ -7,26 +7,26 @@ hamburger.addEventListener("click", () => {
   links.classList.toggle("open");
 });
 
-// Tabs
-defaultOpen = document.getElementById("defaultTab");
-defaultOpen.click();
+// Resource Modals
+var modal = document.getElementById("openResource");
 
-function openTab(evt, tabName) {
-  var i, suite, tabLink;
-  
-  suite = document.getElementsByClassName("suite");
-  for (i=0; i< suite.length; i++) {
-      suite[i].style.display = 'none';
+const button = document.getElementById("button");
+
+var closeModal = document.getElementsByClassName("close")[0];
+
+button.onclick = function() {
+  modal.style.display = "block";
+}
+
+// closing the modal
+closeModal.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target === modal) {
+    modal.style.display = "none"
   }
-
-  tabLink = document.getElementsByClassName("tabLink");
-  for (i=0; i <tabLink.length; i++) {
-      tabLink[i].className = tabLink[i].className.replace(" active", " ");
-  }
-
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
-
 }
 
 // Page Animations

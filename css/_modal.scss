@@ -16,6 +16,16 @@
   border: 0.5px solid black;
 }
 
+.open-resource {
+  @extend .open-instructions;
+  height: 30%;
+  width: 35%;
+  top: 10%;
+  left: 30%;
+  overflow: none;
+  
+}
+
 .content {
   margin: 5% auto;
   width: 85%;
