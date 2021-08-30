@@ -30,18 +30,28 @@
         <li><a href="./resources.html" class="link-style">Resources</a></li>
       </ul>
     </section>
+
     <div class="suite">
-      <h3 class="deck-heading">Definitions</h3>
+      <section>
+        <a href="./navigation.html">Return to Home</a>
+        <h3 class="deck-heading">Definitions</h3>
+      </section>
+
       <div class="verticals">
         <!-- Resource Modal -->
         <article class="open-resource" id="openResource">
-          <span class="close">&times;</span>
-          <h3 class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            officiis laudantium sint ad atque, recusandae voluptate libero
-            doloribus ipsa optio enim quidem inventore aspernatur earum labore
-            nemo quos illum voluptatem!
-          </h3>
+          <span
+            class="close"
+            onclick="const modal = document.getElementById('openResource'); modal.style.display = 'none';"
+            >&times;</span
+          >
+          <div class="content">
+            <h3>Micro-aggression</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+              quaerat dignissimos. 
+            </p>
+          </div>
         </article>
         <!--card 1-->
         <div class="flip-card">
@@ -54,20 +64,31 @@
             </div>
             <div class="flip-card-back">
               <p class="text">What is a microaggression?</p>
-              <button class="see-info" id="button">*</button>
+              <button
+                class="see-info"
+                onclick=" const modal = document.getElementById('openResource'); modal.style.display = 'block'"
+              >
+                *
+              </button>
             </div>
           </div>
         </div>
 
         <!-- Resource Modal -->
-        <article class="open-resource" id="openResource">
-          <span class="close">&times;</span>
-          <h3 class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            officiis laudantium sint ad atque, recusandae voluptate libero
-            doloribus ipsa optio enim quidem inventore aspernatur earum labore
-            nemo quos illum voluptatem!
-          </h3>
+        <article class="open-resource" id="secondCard">
+          <span
+            class="close"
+            onclick=" const modal = document.getElementById('secondCard'); modal.style.display='none' "
+            >&times;</span
+          >
+          <div class="content">
+            <h3>Black-fishing</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate voluptates modi officia qui? Minus cupiditate,
+              doloremque rerum aliquam voluptatibus inventore.
+            </p>
+          </div>
         </article>
         <!--card 2-->
         <div class="flip-card">
@@ -80,20 +101,27 @@
             </div>
             <div class="flip-card-back">
               <p class="text">Define black-fishing.</p>
-              <button class="see-info">*</button>
+              <button
+                class="see-info"
+                onclick="const modal = document.getElementById('secondCard'); modal.style.display='block' "
+              >
+                *
+              </button>
             </div>
           </div>
         </div>
 
         <!-- Resource Modal -->
-        <article class="open-resource" id="openResource">
-          <span class="close">&times;</span>
-          <h3 class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            officiis laudantium sint ad atque, recusandae voluptate libero
-            doloribus ipsa optio enim quidem inventore aspernatur earum labore
-            nemo quos illum voluptatem!
-          </h3>
+        <article class="open-resource" id="thirdResource">
+          <span
+            class="close"
+            onclick="const modal = document.getElementById('thirdResource'); modal.style.display = 'none';"
+            >&times;</span
+          >
+          <div class="content">
+            <h3>Code Switching</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, sequi.</p>
+          </div>
         </article>
         <!--card 3-->
         <div class="flip-card">
@@ -106,19 +134,29 @@
             </div>
             <div class="flip-card-back">
               <p class="text">What is code switching?</p>
-              <button class="see-info">*</button>
+              <button
+                class="see-info"
+                onclick=" const modal = document.getElementById('thirdResource'); modal.style.display = 'block'"
+              >
+                *
+              </button>
             </div>
           </div>
         </div>
+
         <!-- Resource Modal -->
-        <article class="open-resource" id="openResource">
-          <span class="close">&times;</span>
-          <h3 class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            officiis laudantium sint ad atque, recusandae voluptate libero
-            doloribus ipsa optio enim quidem inventore aspernatur earum labore
-            nemo quos illum voluptatem!
-          </h3>
+        <article class="open-resource" id="fourthResource">
+          <span
+            class="close"
+            onclick=" const modal = document.getElementById('fourthResource'); modal.style.display='none' "
+            >&times;</span
+          >
+          <div class="content">
+            <h3>Activism</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, voluptas.</p>
+            <h3>Slacktivism</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, dolores!</p>
+          </div>
         </article>
         <!--card 4-->
         <div class="flip-card">
@@ -133,21 +171,28 @@
               <p class="text">
                 What is activism and slacktivism and what differentiates them?
               </p>
-              <button class="see-info">*</button>
+              <button
+                class="see-info"
+                onclick="const modal = document.getElementById('fourthResource'); modal.style.display='block' "
+              >
+                *
+              </button>
             </div>
           </div>
         </div>
-        <!-- Resource Modal -->
-        <article class="open-resource" id="openResource">
-          <span class="close">&times;</span>
-          <h3 class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            officiis laudantium sint ad atque, recusandae voluptate libero
-            doloribus ipsa optio enim quidem inventore aspernatur earum labore
-            nemo quos illum voluptatem!
-          </h3>
-        </article>
 
+        <!-- Resource Modal -->
+        <article class="open-resource" id="fifthResource">
+          <span
+            class="close"
+            onclick=" const modal = document.getElementById('fifthResource'); modal.style.display='none' "
+            >&times;</span
+          >
+          <div class="content">
+           <h3>Tokenism</h3>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, fugit.</p>
+          </div>
+        </article>
         <!--card 5-->
         <div class="flip-card">
           <div class="flip-card-inner" onclick="flip(event)">
@@ -159,19 +204,27 @@
             </div>
             <div class="flip-card-back">
               <p class="text">Define tokenism/ racial exceptionalism?</p>
-              <button class="see-info">*</button>
+              <button
+                class="see-info"
+                onclick="const modal = document.getElementById('fifthResource'); modal.style.display='block' "
+              >
+                *
+              </button>
             </div>
           </div>
         </div>
+
         <!-- Resource Modal -->
-        <article class="open-resource" id="openResource">
-          <span class="close">&times;</span>
-          <h3 class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            officiis laudantium sint ad atque, recusandae voluptate libero
-            doloribus ipsa optio enim quidem inventore aspernatur earum labore
-            nemo quos illum voluptatem!
-          </h3>
+        <article class="open-resource" id="sixthResource">
+          <span
+            class="close"
+            onclick=" const modal = document.getElementById('sixthResource'); modal.style.display='none' "
+            >&times;</span
+          >
+          <div class="content">
+            <h3>White Guilt</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, accusantium!</p>
+          </div>
         </article>
         <!--card 6-->
         <div class="flip-card">
@@ -184,19 +237,27 @@
             </div>
             <div class="flip-card-back">
               <p class="text">Define White Guilt.</p>
-              <button class="see-info">*</button>
+              <button
+                class="see-info"
+                onclick="const modal = document.getElementById('sixthResource'); modal.style.display='block' "
+              >
+                *
+              </button>
             </div>
           </div>
         </div>
+
         <!-- Resource Modal -->
-        <article class="open-resource" id="openResource">
-          <span class="close">&times;</span>
-          <h3 class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            officiis laudantium sint ad atque, recusandae voluptate libero
-            doloribus ipsa optio enim quidem inventore aspernatur earum labore
-            nemo quos illum voluptatem!
-          </h3>
+        <article class="open-resource" id="seventhResource">
+          <span
+            class="close"
+            onclick=" const modal = document.getElementById('seventhResource'); modal.style.display='none' "
+            >&times;</span
+          >
+          <div class="content">
+            <h3>White Privilege</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, maxime?</p>
+          </div>
         </article>
         <!--card 7-->
         <div class="flip-card">
@@ -209,19 +270,29 @@
             </div>
             <div class="flip-card-back">
               <p class="text">What is white privilege?</p>
-              <button class="see-info">*</button>
+              <button
+                class="see-info"
+                onclick="const modal = document.getElementById('seventhResource'); modal.style.display='block' "
+              >
+                *
+              </button>
             </div>
           </div>
         </div>
+
         <!-- Resource Modal -->
-        <article class="open-resource" id="openResource">
-          <span class="close">&times;</span>
-          <h3 class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            officiis laudantium sint ad atque, recusandae voluptate libero
-            doloribus ipsa optio enim quidem inventore aspernatur earum labore
-            nemo quos illum voluptatem!
-          </h3>
+        <article class="open-resource" id="eighthResource">
+          <span
+            class="close"
+            onclick=" const modal = document.getElementById('eighthResource'); modal.style.display='none' "
+            >&times;</span
+          >
+          <div class="content">
+            <h3>Cultural Appropriation</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, officiis?</p>
+            <h3>Cultural Appreciation</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, aperiam.</p>
+          </div>
         </article>
         <!--card 8-->
         <div class="flip-card">
@@ -237,21 +308,28 @@
                 What is the difference between cultural appropriation and
                 cultural appreciation??
               </p>
-              <button class="see-info">*</button>
+              <button
+                class="see-info"
+                onclick="const modal = document.getElementById('eighthResource'); modal.style.display='block' "
+              >
+                *
+              </button>
             </div>
           </div>
         </div>
-        <!-- Resource Modal -->
-        <article class="open-resource" id="openResource">
-          <span class="close">&times;</span>
-          <h3 class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            officiis laudantium sint ad atque, recusandae voluptate libero
-            doloribus ipsa optio enim quidem inventore aspernatur earum labore
-            nemo quos illum voluptatem!
-          </h3>
-        </article>
 
+        <!-- Resource Modal -->
+        <article class="open-resource" id="ninthResource">
+          <span
+            class="close"
+            onclick=" const modal = document.getElementById('ninthResource'); modal.style.display='none' "
+            >&times;</span
+          >
+          <div class="content">
+            <h3>Colourism</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, amet?</p>
+          </div>
+        </article>
         <!--card 9-->
         <div class="flip-card">
           <div class="flip-card-inner" onclick="flip(event)">
@@ -263,19 +341,27 @@
             </div>
             <div class="flip-card-back">
               <p class="text">Define colourism.</p>
-              <button class="see-info">*</button>
+              <button
+                class="see-info"
+                onclick="const modal = document.getElementById('ninthResource'); modal.style.display='block' "
+              >
+                *
+              </button>
             </div>
           </div>
         </div>
+
         <!-- Resource Modal -->
-        <article class="open-resource" id="openResource">
-          <span class="close">&times;</span>
-          <h3 class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            officiis laudantium sint ad atque, recusandae voluptate libero
-            doloribus ipsa optio enim quidem inventore aspernatur earum labore
-            nemo quos illum voluptatem!
-          </h3>
+        <article class="open-resource" id="tenthResource">
+          <span
+            class="close"
+            onclick=" const modal = document.getElementById('tenthResource'); modal.style.display='none' "
+            >&times;</span
+          >
+          <div class="content">
+            <h3>Slur</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, ad?</p>
+          </div>
         </article>
         <!--card 10-->
         <div class="flip-card">
@@ -291,19 +377,27 @@
                 What is a slur.<br />
                 <strong>Do not list any slurs</strong>
               </p>
-              <button class="see-info">*</button>
+              <button
+                class="see-info"
+                onclick="const modal = document.getElementById('tenthResource'); modal.style.display='block' "
+              >
+                *
+              </button>
             </div>
           </div>
         </div>
+
         <!-- Resource Modal -->
-        <article class="open-resource" id="openResource">
-          <span class="close">&times;</span>
-          <h3 class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            officiis laudantium sint ad atque, recusandae voluptate libero
-            doloribus ipsa optio enim quidem inventore aspernatur earum labore
-            nemo quos illum voluptatem!
-          </h3>
+        <article class="open-resource" id="eleventhResource">
+          <span
+            class="close"
+            onclick=" const modal = document.getElementById('eleventhResource'); modal.style.display='none' "
+            >&times;</span
+          >
+          <div class="content">
+            <h3>Intersectionality</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, obcaecati!</p>
+          </div>
         </article>
         <!--card 11-->
         <div class="flip-card">
@@ -316,12 +410,18 @@
             </div>
             <div class="flip-card-back">
               <p class="text">Define Intersectionality.</p>
-              <button class="see-info">*</button>
+              <button
+                class="see-info"
+                onclick="const modal = document.getElementById('eleventhResource'); modal.style.display='block' "
+              >
+                *
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
     <script src="./scripts/deck.js"></script>
+    <script src="./scripts/app.js"></script>
   </body>
 </html>

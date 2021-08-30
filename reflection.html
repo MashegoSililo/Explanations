@@ -31,17 +31,21 @@
 
   <!-- Suite 3 -->
   <div id="Reflection" class="suite">
-    <h3 class="deck-heading">Reflection</h3>
+    <section>
+      <a href='./navigation.html'>Return Home</a>
+      <h3 class="deck-heading">Reflection</h3>
+    </section>
+    
     <div class="verticals">
       <!-- Resource Modal -->
-      <article class="open-resource" id="openResource">
-        <span class="close">&times;</span>
-        <h3 class="content">
+      <article class="open-resource" id="firstResource">
+        <span class="close" onclick="const modal = document.getElementById('firstResource'); modal.style.display = 'none';">&times;</span>
+        <div class="content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
           officiis laudantium sint ad atque, recusandae voluptate libero
           doloribus ipsa optio enim quidem inventore aspernatur earum labore
           nemo quos illum voluptatem!
-        </h3>
+        </div>
       </article>
       <!--card 1-->
       <div class="flip-card">
@@ -56,20 +60,20 @@
             <p class="text">
               Will you continue to excuse racism that happens around you?
             </p>
-            <button class='see-info'>*</button>
-
+            <button class='see-info' onclick="const modal = document.getElementById('firstResource'); modal.style.display='block' ">*</button>
           </div>
         </div>
       </div>
+
       <!-- Resource Modal -->
-      <article class="open-resource" id="openResource">
-        <span class="close">&times;</span>
-        <h3 class="content">
+      <article class="open-resource" id="secondResource">
+        <span class="close" onclick="const modal = document.getElementById('secondResource'); modal.style.display = 'none';">&times;</span>
+        <div class="content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
           officiis laudantium sint ad atque, recusandae voluptate libero
           doloribus ipsa optio enim quidem inventore aspernatur earum labore
           nemo quos illum voluptatem!
-        </h3>
+        </div>
       </article>
       <!--card 2-->
       <div class="flip-card">
@@ -85,20 +89,21 @@
               How would you go about holding someone you know accountable
               for racist actions or using racist words?
             </p>
-            <button class='see-info'>*</button>
+            <button class='see-info' onclick="const modal = document.getElementById('secondResource'); modal.style.display='block' ">*</button>
 
           </div>
         </div>
       </div>
+
       <!-- Resource Modal -->
-      <article class="open-resource" id="openResource">
-        <span class="close">&times;</span>
-        <h3 class="content">
+      <article class="open-resource" id="thirdResource">
+        <span class="close" onclick="const modal = document.getElementById('thirdResource'); modal.style.display = 'none';">&times;</span>
+        <div class="content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
           officiis laudantium sint ad atque, recusandae voluptate libero
           doloribus ipsa optio enim quidem inventore aspernatur earum labore
           nemo quos illum voluptatem!
-        </h3>
+        </div>
       </article>
       <!--card 3-->
       <div class="flip-card">
@@ -114,20 +119,21 @@
               How can you use your privilege to help a BIPOC in
               your life?
             </p>
-            <button class='see-info'>*</button>
+            <button class='see-info' onclick="const modal = document.getElementById('thirdResource'); modal.style.display='block' ">*</button>
 
           </div>
         </div>
       </div>
+
       <!-- Resource Modal -->
-      <article class="open-resource" id="openResource">
-        <span class="close">&times;</span>
-        <h3 class="content">
+      <article class="open-resource" id="fourthResource">
+        <span class="close" onclick="const modal = document.getElementById('fourthResource'); modal.style.display = 'none';">&times;</span>
+        <div class="content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
           officiis laudantium sint ad atque, recusandae voluptate libero
           doloribus ipsa optio enim quidem inventore aspernatur earum labore
           nemo quos illum voluptatem!
-        </h3>
+        </div>
       </article>
       <!--card 4-->
       <div class="flip-card">
@@ -143,22 +149,22 @@
               Will you personally keep supporting public figures who you
               know are racist?
             </p>
-            <button class='see-info'>*</button>
+            <button class='see-info' onclick="const modal = document.getElementById('fourthResource'); modal.style.display='block' ">*</button>
 
           </div>
         </div>
       </div>
+
       <!-- Resource Modal -->
-      <article class="open-resource" id="openResource">
-        <span class="close">&times;</span>
-        <h3 class="content">
+      <article class="open-resource" id="fifthResource">
+        <span class="close" onclick="const modal = document.getElementById('fifthResource'); modal.style.display = 'none';">&times;</span>
+        <div class="content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
           officiis laudantium sint ad atque, recusandae voluptate libero
           doloribus ipsa optio enim quidem inventore aspernatur earum labore
           nemo quos illum voluptatem!
-        </h3>
+        </div>
       </article>
-
       <!--card 5-->
       <div class="flip-card">
         <div class="flip-card-inner" onclick="flip(event)">
@@ -174,20 +180,21 @@
               hold (if you hold any)? How would you go about getting
               someone else in your life to let go of theirs?
             </p>
-            <button class='see-info'>*</button>
+            <button class='see-info' onclick="const modal = document.getElementById('fifthResource'); modal.style.display='block' ">*</button>
 
           </div>
         </div>
       </div>
+
       <!-- Resource Modal -->
-      <article class="open-resource" id="openResource">
-        <span class="close">&times;</span>
-        <h3 class="content">
+      <article class="open-resource" id="sixthResource">
+        <span class="close" onclick="const modal = document.getElementById('sixthResource'); modal.style.display = 'none';">&times;</span>
+        <div class="content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
           officiis laudantium sint ad atque, recusandae voluptate libero
           doloribus ipsa optio enim quidem inventore aspernatur earum labore
           nemo quos illum voluptatem!
-        </h3>
+        </div>
       </article>
       <!--card 6-->
       <div class="flip-card">
@@ -203,20 +210,21 @@
               Do you think that people are capable of change? How do you
               go about assessing that?
             </p>
-            <button class='see-info'>*</button>
+            <button class='see-info' onclick="const modal = document.getElementById('sixthResource'); modal.style.display='block' ">*</button>
 
           </div>
         </div>
       </div>
+
       <!-- Resource Modal -->
-      <article class="open-resource" id="openResource">
-        <span class="close">&times;</span>
-        <h3 class="content">
+      <article class="open-resource" id="seventhResource">
+        <span class="close" onclick="const modal = document.getElementById('seventhResource'); modal.style.display = 'none';">&times;</span>
+        <div class="content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
           officiis laudantium sint ad atque, recusandae voluptate libero
           doloribus ipsa optio enim quidem inventore aspernatur earum labore
           nemo quos illum voluptatem!
-        </h3>
+        </div>
       </article>
       <!--card 7-->
       <div class="flip-card">
@@ -232,14 +240,15 @@
               Can you think of ways to effectively deal with devils
               advocates?
             </p>
-            <button class='see-info'>*</button>
+            <button class='see-info' onclick="const modal = document.getElementById('seventhResource'); modal.style.display='block' ">*</button>
 
           </div>
         </div>
       </div>
+
       <!-- Resource Modal -->
-      <article class="open-resource" id="openResource">
-        <span class="close">&times;</span>
+      <article class="open-resource" id="eighthResource">
+        <span class="close" onclick="const modal = document.getElementById('eighth'); modal.style.display = 'none';">&times;</span>
         <h3 class="content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
           officiis laudantium sint ad atque, recusandae voluptate libero
@@ -260,22 +269,22 @@
             <p class="text">
               What are you taking away from this exercise?
             </p>
-            <button class='see-info'>*</button>
+            <button class='see-info' onclick="const modal = document.getElementById('eighthResource'); modal.style.display='block' ">*</button>
 
           </div>
         </div>
       </div>
+
       <!-- Resource Modal -->
-      <article class="open-resource" id="openResource">
-        <span class="close">&times;</span>
-        <h3 class="content">
+      <article class="open-resource" id="ninthResource">
+        <span class="close" onclick="const modal = document.getElementById('ninthResource'); modal.style.display = 'none';">&times;</span>
+        <div class="content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
           officiis laudantium sint ad atque, recusandae voluptate libero
           doloribus ipsa optio enim quidem inventore aspernatur earum labore
           nemo quos illum voluptatem!
-        </h3>
+        </div>
       </article>
-
       <!--card 9-->
       <div class="flip-card">
         <div class="flip-card-inner" onclick="flip(event)">
@@ -290,20 +299,21 @@
               Can you think of ways you can tackle systemic racism in your
               company or field of work?
             </p>
-            <button class='see-info'>*</button>
+            <button class='see-info' onclick="const modal = document.getElementById('ninthResource'); modal.style.display='block' ">*</button>
 
           </div>
         </div>
       </div>
+
       <!-- Resource Modal -->
-      <article class="open-resource" id="openResource">
-        <span class="close">&times;</span>
-        <h3 class="content">
+      <article class="open-resource" id="tenthResource">
+        <span class="close" onclick="const modal = document.getElementById('tenthResource'); modal.style.display = 'none';">&times;</span>
+        <div class="content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
           officiis laudantium sint ad atque, recusandae voluptate libero
           doloribus ipsa optio enim quidem inventore aspernatur earum labore
           nemo quos illum voluptatem!
-        </h3>
+        </div>
       </article>
       <!--card 10-->
       <div class="flip-card">
@@ -318,20 +328,21 @@
             <p class="text">
               Explain why reverse racism is not a real thing.
             </p>
-            <button class='see-info'>*</button>
+            <button class='see-info' onclick="const modal = document.getElementById('tenthResource'); modal.style.display='block' ">*</button>
 
           </div>
         </div>
       </div>
+
       <!-- Resource Modal -->
-      <article class="open-resource" id="openResource">
-        <span class="close">&times;</span>
-        <h3 class="content">
+      <article class="open-resource" id="eleventhResource">
+        <span class="close" onclick="const modal = document.getElementById('eleventhResource'); modal.style.display = 'none';">&times;</span>
+        <div class="content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
           officiis laudantium sint ad atque, recusandae voluptate libero
           doloribus ipsa optio enim quidem inventore aspernatur earum labore
           nemo quos illum voluptatem!
-        </h3>
+        </div>
       </article>
       <!--card 11-->
       <div class="flip-card">
@@ -346,20 +357,21 @@
             <p class="text">
               What do you think the consequences for racism should be?
             </p>
-            <button class='see-info'>*</button>
+            <button class='see-info' onclick="const modal = document.getElementById('eleventhResource'); modal.style.display='block' ">*</button>
 
           </div>
         </div>
       </div>
+
       <!-- Resource Modal -->
-      <article class="open-resource" id="openResource">
-        <span class="close">&times;</span>
-        <h3 class="content">
+      <article class="open-resource" id="twelfthResource">
+        <span class="close" onclick="const modal = document.getElementById('twelfthResource'); modal.style.display = 'none';">&times;</span>
+        <div class="content">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
           officiis laudantium sint ad atque, recusandae voluptate libero
           doloribus ipsa optio enim quidem inventore aspernatur earum labore
           nemo quos illum voluptatem!
-        </h3>
+        </div>
       </article>
       <!--card 12-->
       <div class="flip-card">
@@ -375,7 +387,7 @@
               Do you know where to find reputable information about racial
               issues racial injustices?
             </p>
-            <button class='see-info'>*</button>
+            <button class='see-info' onclick="const modal = document.getElementById('twelfthResource'); modal.style.display='block' ">*</button>
 
           </div>
         </div>
