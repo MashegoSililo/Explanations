@@ -5,10 +5,20 @@
 @import "./footer";
 @import "./mobile";
 
-$btnHeight: 70px;
-$btnWidth: 250px;
+$btnHeight: 10vh;
+$btnWidth: 30vh;
 $blue: #196564;
 $btnColor: #fc7750;
+$first: #9CB380;
+$second: #94A89A;
+$third: #C7AC92;
+$linkHoverColor: #A44A3F;
+// extra color
+$extraColor: #D4E09B;
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   padding: 0;
@@ -21,7 +31,7 @@ body {
 
 .nav-suite {
   position: absolute;
-  top: 18%;
+  top: 25%;
   margin-left: 5%;
   display: flex;
   flex-wrap: wrap;
@@ -57,7 +67,7 @@ body {
 }
 
 .first {
-  background: rgb(184, 125, 169);
+  background: $first;
   padding-left: 45%;
   padding-right: 45%;
   padding-top: 5%;
@@ -66,12 +76,12 @@ body {
 
 .second {
   @extend .first;
-  background: rgb(212, 221, 132);
+  background: $second
 }
 
 .third {
   @extend .first;
-  background: rgb(99, 146, 99);
+  background: $third;
 }
 
 /* Image */
@@ -87,7 +97,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 80%;
   text-align: center;
   font-size: 4vh;
 }
@@ -97,6 +107,7 @@ body {
   width: $btnWidth;
   text-align: center;
   align-items: center;
+  margin: 1%;
   font-family: Century;
   font-size: 1em;
   font-weight: bold;
@@ -104,15 +115,17 @@ body {
   text-decoration: none;
   color: black;
   &:hover {
-    background: $btnColor;
+    background: $linkHoverColor;
   }
 }
 
 .main {
-  width: 80%;
+  width: 60%;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   justify-content: space-around;
+  align-items: baseline;
 }
+

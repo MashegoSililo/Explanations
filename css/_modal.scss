@@ -20,10 +20,9 @@
   @extend .open-instructions;
   height: 30%;
   width: 35%;
-  top: 10%;
+  top: 30%;
   left: 30%;
-  overflow: none;
-  
+  overflow: none;  
 }
 
 .content {
@@ -34,6 +33,8 @@
 
 .close {
   position: relative;
+  top: 5%;
+  left: 90%;
   color: black;
   font-size: 4vh;
   width: 30px;

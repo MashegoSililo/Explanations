@@ -1,6 +1,6 @@
 $cardWidth: 290px;
 $cardHeight: 225px;
-$linkColor: #972d07;
+$linkColor: #7e4e2f;
 
 .flip-card {
   position: relative;
@@ -39,7 +39,7 @@ $linkColor: #972d07;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-weight: bold;
     font-size: 1em;
-    text-align: left;
+    text-align: center;
     position: absolute;
     top: 40%;
     left: 40%;
@@ -47,8 +47,13 @@ $linkColor: #972d07;
   }
 
   .see-info {
-
-
+    position: absolute;
+    top: 5%;
+    left:80%;
+    background: white;
+    border: 1px solid ;
+    border-radius: 10px;
+    
   }
 
   // Card design

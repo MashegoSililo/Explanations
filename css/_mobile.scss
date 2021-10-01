@@ -1,4 +1,5 @@
-$cardWidth: 160px;
+
+$cardWidth: 230px;
 $cardHeight: 185px;
 $mobileBtnWidth: 150px;
 
@@ -11,6 +12,15 @@ $mobileBtnWidth: 150px;
     margin: 5px;
   }
 
+  /* Image */
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height:50vh;
+  width: 70%;
+}
+
   // Navigation page
   .navigation {
     position: relative;
@@ -18,14 +28,10 @@ $mobileBtnWidth: 150px;
 
   .nav-suite {
     position: absolute;
-    top: 15%;
-    left: 10%;
     margin-left: 30%;
     display: block;
     width: 90%;
   }
-
-
 
   // Tabs
   .tab {

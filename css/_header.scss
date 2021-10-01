@@ -1,3 +1,5 @@
+$linkHoverColor: #A44A3F;
+
 .navigation {
   position: fixed;
   display: flex;
@@ -30,7 +32,7 @@
     color: black;
     font-size: 3vh;
     &:hover {
-      color: #b63215;
+      color: $linkHoverColor;
     }
   }
   @media screen and (max-width: 765px){
@@ -60,10 +62,11 @@
     }
     .links {
       position: fixed;
+      top: -10%;
       right: 0%;
       background-color: #fffdfd;
       color: black;
-      height: 100vh;
+      height: 110vh;
       width: 100vh;
       flex-direction: column;
       clip-path: circle(50px at 90% -20%);
@@ -73,7 +76,7 @@
       z-index: 2;
     }
     .link-style:hover {
-      color: #b63215;
+      color: $linkHoverColor;
     }
     .links.open {
       clip-path: circle(1000px at 90% -20%);
