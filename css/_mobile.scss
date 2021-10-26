@@ -5,6 +5,9 @@ $mobileBtnWidth: 150px;
 
 @media screen and (max-width: 765px) {
   // Index
+  .background {
+    background:#FFEA98;
+  }
   .line {
     width: 30px;
     height: 3px;
@@ -15,10 +18,11 @@ $mobileBtnWidth: 150px;
   /* Image */
 .img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height:50vh;
-  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%) translateX(-20%);
+
 }
 
   // Navigation page
