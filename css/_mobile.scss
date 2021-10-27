@@ -1,29 +1,63 @@
-
 $cardWidth: 230px;
 $cardHeight: 185px;
 $mobileBtnWidth: 150px;
+$btnHeight: 7vh;
+$btnWidth: 45vh;
 
 @media screen and (max-width: 765px) {
   // Index
   .background {
-    background:#FFEA98;
+    background: #ffea98;
   }
+  
   .line {
     width: 30px;
     height: 3px;
     background: rgb(0, 0, 0);
     margin: 5px;
   }
+  // Call to action
+  .landing {
+    padding-top: 5%;
+    display: block;
+  }
+  .start-deck {
+    height: $btnHeight;
+    width: $btnWidth;
+    position: relative;
+    left: 10%;
+    transform: translateX(-10%);
+    text-align: center;
+    margin: 1%;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 23px;
+    text-decoration: none;
+    color: black;
+    background: rgb(226, 40, 40);
+    &:hover {
+      background: $linkHoverColor;
+    }
+  }
+
+  .main {
+    position: relative;
+    left: 10%;
+    top: 80%;
+  }
 
   /* Image */
-.img {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 20%;
-  transform: translateY(-50%) translateX(-20%);
-
-}
+  .img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%) translateX(-10%);
+    width: 50vh;
+    height: 30vh;
+  }
 
   // Navigation page
   .navigation {

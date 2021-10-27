@@ -256,7 +256,7 @@
 }
 
 .flip-card .card-front {
-  background-color: #7e4e2f;
+  background-color: #3a3a3a;
   overflow: hidden;
   position: relative;
   width: 290px;
@@ -272,7 +272,7 @@
   font-weight: bold;
   padding: 0;
   line-height: 160%;
-  background-color: #7e4e2f;
+  background-color: #3a3a3a;
 }
 
 .flip-card .g {
@@ -366,7 +366,7 @@ footer .link-style-footer:hover {
 
 @media screen and (max-width: 765px) {
   .background {
-    background: #FFEA98;
+    background: #ffea98;
   }
   .line {
     width: 30px;
@@ -374,14 +374,46 @@ footer .link-style-footer:hover {
     background: black;
     margin: 5px;
   }
+  .landing {
+    padding-top: 5%;
+    display: block;
+  }
+  .start-deck {
+    height: 7vh;
+    width: 45vh;
+    position: relative;
+    left: 10%;
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+    text-align: center;
+    margin: 1%;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 23px;
+    text-decoration: none;
+    color: black;
+    background: #e22828;
+  }
+  .start-deck:hover {
+    background: #A44A3F;
+  }
+  .main {
+    position: relative;
+    left: 10%;
+    top: 80%;
+  }
   /* Image */
   .img {
     display: block;
     position: absolute;
     top: 50%;
-    left: 20%;
-    -webkit-transform: translateY(-50%) translateX(-20%);
-            transform: translateY(-50%) translateX(-20%);
+    left: 10%;
+    -webkit-transform: translateY(-50%) translateX(-10%);
+            transform: translateY(-50%) translateX(-10%);
+    width: 50vh;
+    height: 30vh;
   }
   .navigation {
     position: relative;
@@ -416,10 +448,10 @@ footer .link-style-footer:hover {
     background: white;
   }
   .tab button:hover {
-    background: #7e4e2f;
+    background: #3a3a3a;
   }
   .tab button:active {
-    background: #7e4e2f;
+    background: #3a3a3a;
   }
   .row-1,
   .row-2,
@@ -495,7 +527,7 @@ footer .link-style-footer:hover {
             justify-content: baseline;
   }
   .flip-card .card-front {
-    background-color: #7e4e2f;
+    background-color: #3a3a3a;
     overflow: hidden;
     position: relative;
     width: 230px;
@@ -510,7 +542,7 @@ footer .link-style-footer:hover {
     font-weight: bold;
     padding: 0;
     line-height: 160%;
-    background-color: #7e4e2f;
+    background-color: #3a3a3a;
   }
   .flip-card .g {
     position: absolute;
@@ -558,7 +590,7 @@ body {
 
 .nav-suite {
   position: absolute;
-  top: 25%;
+  top: 15%;
   margin-left: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -570,14 +602,16 @@ body {
   width: 90%;
 }
 
+.nav-img {
+  width: 55vh;
+}
+
 .suite-label {
   text-align: center;
   min-width: 50vh;
   width: 50vh;
   margin: 1%;
   padding: 1%;
-  border: 0.5px solid black;
-  height: 50vh;
 }
 
 .suite-label .deck-link {
@@ -599,7 +633,7 @@ body {
 }
 
 .first, .second, .third {
-  background: #9CB380;
+  background: #ee5050;
   padding-left: 45%;
   padding-right: 45%;
   padding-top: 5%;
@@ -607,22 +641,27 @@ body {
 }
 
 .second {
-  background: #94A89A;
+  background: #317c7b;
 }
 
 .third {
-  background: #C7AC92;
+  background: #f88c26;
 }
 
 /* Image */
 .img {
   display: block;
   position: absolute;
-  top: 60%;
+  top: 65%;
   left: 20%;
-  -webkit-transform: translateY(-60%) translateX(-20%);
-          transform: translateY(-60%) translateX(-20%);
-  width: 50%;
+  -webkit-transform: translateY(-65%) translateX(-20%);
+          transform: translateY(-65%) translateX(-20%);
+  width: 110vh;
+  height: 55vh;
+}
+
+.mobile-img {
+  display: none;
 }
 
 /* By-line */
