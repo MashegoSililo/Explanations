@@ -25,7 +25,7 @@
   height: 80%;
   overflow: auto;
   background: rgb(247, 240, 240);
-  border:none;
+  border: none;
   border-radius: 20px;
 }
 
@@ -37,15 +37,19 @@
   width: 30%;
   height: 80%;
   overflow: auto;
-  background: rgba(0, 0, 0, 0.911);;
+  background: rgba(0, 0, 0, 0.911);
   color: white;
-  border:none;
-  border-radius: 0px; 
+  border: none;
+  border-radius: 0px;
 }
 .content {
-  margin: 3% auto;
+  margin: 3%;
   width: 85%;
   font-size: 20px;
+  a {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 .close-resource {
@@ -53,7 +57,7 @@
   position: relative;
   top: 2%;
   left: 85%;
-  font-size:4vh;
+  font-size: 4vh;
   cursor: pointer;
   padding: 1%;
 }
@@ -96,8 +100,23 @@
     z-index: 3;
     width: 80%;
     height: 75%;
-    overflow: auto;
     background: white;
     border: 0.5px solid black;
+  }
+  .content {
+    margin: 1%;
+    width: 90%;
+    font-size: 15px;
+    ul {
+      list-style-type: disc;
+    }
+    li{
+      margin: 4%;
+    }
+    a {
+      text-decoration: none;
+      color: black
+      
+    }
   }
 }
