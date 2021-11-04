@@ -5,22 +5,18 @@
 
 .suite {
   position: absolute;
-  top: 15%;
+  top: 10%;
   left: 7%;
 }
 
 .information-centre {
   position: relative;
-  top:15%;
-  left: 40%;
-  transform: translateX(-40%);
   display: flex;
-  justify-content: space-around;
   align-items: baseline;
-  border: 0.5px solid black;
-  border-radius: 60px;
-  width: 50%;
-  margin: 2%;
-  text-align: center;
   
+  margin: 1%;
+  padding-top: 1%;
+  a {
+    padding-right: 2%;
+  }
 }
