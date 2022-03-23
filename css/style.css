@@ -105,18 +105,18 @@
 
 /* Button that opens Modal */
 .subheading-2 {
-  position: relative;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   text-align: center;
   margin: 1%;
-  padding-top: 3%;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  position: relative;
+  left: 10%;
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
+  padding-top: 1%;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
   font-weight: bold;
   border: none;
-  color: #e22828;
+  color: black;
   background: inherit;
   cursor: pointer;
 }
@@ -396,7 +396,7 @@ footer .link-style-footer:hover {
 
 @media screen and (max-width: 765px) {
   .background {
-    background: #ffea98;
+    background: white;
   }
   .line {
     width: 30px;
@@ -411,23 +411,6 @@ footer .link-style-footer:hover {
   .start-deck {
     height: 7vh;
     width: 45vh;
-    position: relative;
-    left: 10%;
-    -webkit-transform: translateX(-10%);
-            transform: translateX(-10%);
-    text-align: center;
-    margin: 1%;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 1em;
-    font-weight: bold;
-    border: none;
-    border-radius: 23px;
-    text-decoration: none;
-    color: black;
-    background: #e22828;
-  }
-  .start-deck:hover {
-    background: #A44A3F;
   }
   .main {
     position: relative;
@@ -473,7 +456,7 @@ footer .link-style-footer:hover {
     float: left;
     border: 0.5px solid black;
     cursor: pointer;
-    font-family: Century;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     background: white;
   }
@@ -543,7 +526,7 @@ footer .link-style-footer:hover {
     z-index: 1;
   }
   .flip-card .text {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 0.8em;
     text-align: left;
@@ -567,7 +550,7 @@ footer .link-style-footer:hover {
   .flip-card .gg {
     position: fixed;
     height: 100%;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 100px;
     font-weight: bold;
     padding: 0;
@@ -604,11 +587,11 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .background {
-  background: #FFEA98;
+  background: white;
 }
 
 .landing {
@@ -616,6 +599,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  overflow: hidden;
 }
 
 .nav-suite {
@@ -678,57 +663,41 @@ body {
   background: #f88c26;
 }
 
-/* Image */
-.img {
-  display: block;
-  position: absolute;
-  top: 65%;
-  left: 20%;
-  -webkit-transform: translateY(-65%) translateX(-20%);
-          transform: translateY(-65%) translateX(-20%);
-  width: 110vh;
-  height: 55vh;
-}
-
-.mobile-img {
-  display: none;
-}
-
 /* By-line */
 .subheading {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-size: 4vh;
+  font-size: 64px;
+  width: 70%;
+  margin-left: 7%;
+  padding-top: 7%;
+  -webkit-transition: 2s;
+  transition: 2s;
+  opacity: 0;
+}
+
+.subheading.show {
+  opacity: 1;
 }
 
 .start-deck {
   height: 7vh;
   width: 45vh;
-  position: relative;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   text-align: center;
   margin: 1%;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  left: 10%;
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
   font-weight: bold;
-  border: none;
-  border-radius: 23px;
+  border: 1px solid black;
   text-decoration: none;
   color: black;
-  background: #e22828;
+  background: white;
 }
 
 .start-deck:hover {
-  background: #f5f8fa;
-}
-
-.main {
-  position: absolute;
-  left: 50%;
-  top: 30%;
+  background: black;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
