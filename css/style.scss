@@ -14,7 +14,7 @@ $second: #317c7b;
 $third: #f88c26;
 $linkHoverColor: #f5f8fa;
 // extra color
-$extraColor: #D4E09B;
+$extraColor: #d4e09b;
 
 html {
   scroll-behavior: smooth;
@@ -23,11 +23,11 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .background {
-  background: white
+  background: white;
 }
 
 .landing {
@@ -51,15 +51,16 @@ body {
 }
 
 .suite-label {
-  text-align: center;
+  text-align: left;
   min-width: 50vh;
   width: 50vh;
-  margin: 1%;
-  padding: 1%;
+  // margin: 1%;
+  // padding: 1%;
 
   .deck-link {
     color: black;
     text-decoration: none;
+    font-weight: 500;
 
     &:link {
       color: black;
@@ -67,33 +68,46 @@ body {
     &:visited {
       text-decoration: underline;
     }
+    &:hover {
+      color: white;
+      background: black
+    }
   }
 }
-
 
 .description {
   padding-top: 5%;
   padding-bottom: 5%;
+  text-align: left;
+  // border: 1px solid black
 }
 
 .first {
-  background: $first;
-  padding-left: 45%;
-  padding-right: 45%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  border: 1px solid black;
+  color: black;
+}
+.first:hover {
+  // background: black;
+  color: white;
 }
 
-.second {
-  @extend .first;
-  background: $second
-}
-
+.second,
 .third {
   @extend .first;
-  background: $third;
+  background: white;
 }
 
+.info {
+  padding-top: 5%;
+  width: 90%
+}
+.info a {
+  text-decoration: underline;
+}
 
 /* By-line */
 .subheading {
@@ -105,33 +119,41 @@ body {
   opacity: 0;
 }
 .subheading.show {
-  opacity: 1
+  opacity: 1;
 }
 
 .start-deck {
-  height: $btnHeight;
-  width: $btnWidth;
-  text-align: center;
+  // height: $btnHeight;
+  width: 150px;
   margin: 1%;
+  padding: 1%;
   position: relative;
-  left: 10%;
+  align-items: baseline;
+  align-items: center;
+  display: flex;
+  left: 70%;
   transform: translateX(-10%);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1em;
-  font-weight: bold;
   border: 1px solid black;
   text-decoration: none;
   color: black;
   background: white;
   &:hover {
     background: black;
-    color: white
+    color: white;
   }
 }
 
-// .main {
-// position: absolute;
-// left: 50%;
-// top: 30%;
-// }
+.start-deck span {
+  padding-left: 4%;
+}
 
+// Instructions
+.instructions {
+  height: 50vh;
+  margin-left: 7%;
+  width: 50%;
+}
+// .instructions-heading {
+//   margin: 1%;
+// }

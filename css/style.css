@@ -3,23 +3,27 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 10%;
   width: 100%;
   position: fixed;
   -webkit-box-pack: baseline;
       -ms-flex-pack: baseline;
           justify-content: baseline;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   z-index: 3;
-  padding-bottom: 2%;
   background: white;
 }
 
 .navigation .name {
   padding-left: 6%;
-  padding-bottom: 5%;
   height: 100%;
   width: 50%;
-  font-size: 4vh;
+  font-size: 13px;
+}
+
+.navigation .name h1 {
+  font-size: 24px;
 }
 
 .navigation .links {
@@ -34,18 +38,17 @@
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
-  margin-top: 55px;
+  margin-top: 35px;
 }
 
 .navigation .link-style {
-  font-weight: bold;
   text-decoration: none;
   color: black;
-  font-size: 3vh;
+  font-size: 15px;
 }
 
 .navigation .link-style:hover {
-  color: #A44A3F;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 765px) {
@@ -622,16 +625,15 @@ body {
 }
 
 .suite-label {
-  text-align: center;
+  text-align: left;
   min-width: 50vh;
   width: 50vh;
-  margin: 1%;
-  padding: 1%;
 }
 
 .suite-label .deck-link {
   color: black;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .suite-label .deck-link:link {
@@ -642,25 +644,44 @@ body {
   text-decoration: underline;
 }
 
+.suite-label .deck-link:hover {
+  color: white;
+  background: black;
+}
+
 .description {
   padding-top: 5%;
   padding-bottom: 5%;
+  text-align: left;
 }
 
-.first, .second, .third {
-  background: #ee5050;
-  padding-left: 45%;
-  padding-right: 45%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-.second {
-  background: #317c7b;
-}
-
+.first, .second,
 .third {
-  background: #f88c26;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  border: 1px solid black;
+  color: black;
+}
+
+.first:hover, .second:hover,
+.third:hover {
+  color: white;
+}
+
+.second,
+.third {
+  background: white;
+}
+
+.info {
+  padding-top: 5%;
+  width: 90%;
+}
+
+.info a {
+  text-decoration: underline;
 }
 
 /* By-line */
@@ -679,17 +700,23 @@ body {
 }
 
 .start-deck {
-  height: 7vh;
-  width: 45vh;
-  text-align: center;
+  width: 150px;
   margin: 1%;
+  padding: 1%;
   position: relative;
-  left: 10%;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 70%;
   -webkit-transform: translateX(-10%);
           transform: translateX(-10%);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1em;
-  font-weight: bold;
   border: 1px solid black;
   text-decoration: none;
   color: black;
@@ -699,5 +726,15 @@ body {
 .start-deck:hover {
   background: black;
   color: white;
+}
+
+.start-deck span {
+  padding-left: 4%;
+}
+
+.instructions {
+  height: 50vh;
+  margin-left: 7%;
+  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */

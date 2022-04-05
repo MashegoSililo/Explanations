@@ -3,19 +3,20 @@ $linkHoverColor: #A44A3F;
 .navigation {
   position: fixed;
   display: flex;
-  height: 10%;
   width: 100%;
   position: fixed;
   justify-content: baseline;
+  align-items: baseline;
   z-index: 3;
-  padding-bottom: 2%;
   background: white;
   .name {
     padding-left: 6%;
-    padding-bottom: 5%;
     height: 100%;
     width: 50%;
-    font-size: 4vh;
+    font-size: 13px;
+  }
+  .name h1 {
+    font-size: 24px;
   }
   .links {
     display: flex;
@@ -24,15 +25,15 @@ $linkHoverColor: #A44A3F;
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    margin-top: 55px;
+    margin-top: 35px;
   }
   .link-style {
-    font-weight: bold;
+    // font-weight: bold;
     text-decoration: none;
     color: black;
-    font-size: 3vh;
+    font-size: 15px;
     &:hover {
-      color: $linkHoverColor;
+     text-decoration: underline;
     }
   }
   @media screen and (max-width: 765px){
